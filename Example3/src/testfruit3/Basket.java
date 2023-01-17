@@ -32,6 +32,7 @@ public class Basket {
 		
 		return sum;
 	}
+	//somethin
 	public List<TasteWeight> findTasteWeight(){
 		List<TasteWeight> anser = new ArrayList<TasteWeight>();
 		
