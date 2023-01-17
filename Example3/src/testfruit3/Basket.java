@@ -32,7 +32,6 @@ public class Basket {
 		
 		return sum;
 	}
-	//somethin
 	public List<TasteWeight> findTasteWeight(){
 		List<TasteWeight> anser = new ArrayList<TasteWeight>();
 		
@@ -41,7 +40,7 @@ public class Basket {
 				int tempWeight = ((Fruit)temp).getWeight(); // use cast change temp is fruit find weight
 				String tempTaste = ((Fruit)temp).getTaste();  // use cast change temp is fruit find taste
 				
-				int i = findPosition(anser,tempTaste); // find taste in temp    have in taste in anser?
+				int i =findPosition(anser,tempTaste); // find taste in temp    have in taste in anser?
 				if(i<0) { // if dont have
 					anser.add(new TasteWeight(tempWeight,tempTaste)); // add new taste and new weight
 				}
@@ -50,6 +49,7 @@ public class Basket {
 				}
 			}
 		}
+		
 		return anser;
 	}
 	public int findPosition(List<TasteWeight> anser,String taste) {// check taste have taste in anser? if dont have return -1
@@ -76,4 +76,5 @@ public class Basket {
 		}
 		return anser;
 	}
+	
 }
